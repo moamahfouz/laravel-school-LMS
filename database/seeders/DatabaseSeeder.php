@@ -35,8 +35,8 @@ class DatabaseSeeder extends Seeder
         $student = Student::create([
             'name'=>'teacher',
             'school_id'=>$school->id,
-            'email'=>'teacher@teacher.com',
-            'password'=>bcrypt('teacher@teacher.com'),
+            'email'=>'student@student.com',
+            'password'=>bcrypt('student@student.com'),
             'profile_picture' => 'avatar.png',
         ]);
 
