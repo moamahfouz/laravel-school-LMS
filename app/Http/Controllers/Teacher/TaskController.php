@@ -38,6 +38,7 @@ class TaskController extends Controller
 
         Task::create([
             'name'=> $request->name,
+            'school_id'=>auth('teacher')->user()->school_id,
             'description'=> $request->description,
             'class_id'=>$request->class_id,
             'teacher_id'=>auth('teacher')->user()->id,
@@ -46,7 +47,7 @@ class TaskController extends Controller
         ]);
 
 
-        return redirect()->back()->with('success', 'Class has been created');
+        return redirect()->back()->with('success', 'Task has been created');
     }
 
 

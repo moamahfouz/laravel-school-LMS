@@ -27,7 +27,7 @@ class StudentController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $rows = Student::where('teacher_id',auth('teacher')->user()->id)->latest()->get();
+        $rows = Student::where('school_id',auth('teacher')->user()->school_id)->latest()->get();
         return view('teacher.students.index', compact('rows'));
     }
 

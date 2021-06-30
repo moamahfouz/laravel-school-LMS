@@ -21,7 +21,7 @@ class ClassController extends Controller
     {
 
         //$teachers = Teacher::where('school_id', auth('school')->user()->id)->get();
-        $teachers = Teacher::with('student', 'class')->get();
+        $teachers = Teacher::with('class')->get();
 
         //$rows = SchoolClass::where('school_id', auth('school')->user()->id)->get();
         $rows = SchoolClass::with('teacher')->where('school_id', auth('school')->user()->id)->get();
