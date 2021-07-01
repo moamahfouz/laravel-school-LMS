@@ -63,7 +63,12 @@
                         <div class="text-center">
                             <img src="/images/students/{{$user->profile_picture}}" width="100px" class="img-fluid">
                         </div>
-
+                        <div class="text-left">
+                            <ul>
+                                <li><i class="fa fa-phone"></i> {{$user->phone}}</li>
+                                <li><i class="fa fa-envelope"></i> {{$user->email}}</li>
+                            </ul>
+                        </div>
 
 
 

@@ -76,7 +76,7 @@
                             <td>{{{$idx+1}}}</td>
                             <td>{{$row->name}}</td>
                             <td>
-                                <a href="/teacher/classes/5" class="btn btn-sm btn-success">Show <i class="fa fa-eye"></i></a>
+                                <a href="/teacher/classes/{{$row->id}}" class="btn btn-sm btn-success">Show <i class="fa fa-eye"></i></a>
                             </td>
                         </tr>
                         @endforeach

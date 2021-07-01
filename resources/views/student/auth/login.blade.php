@@ -70,7 +70,7 @@
 
                                     <div class="form-group row">
                                         <div class="col-md-12">
-                                            <input id="password" placeholder="Enter your password" type="password" value="{{ (\Session::get('password')) ? Session::get('password') : ' ' }}" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                            <input id="password" placeholder="Enter your password" type="password" value="{{ (\Session::get('password')) ? Session::get('password') : '' }}" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                             @if ($errors->has('password'))
                                                 <span class="invalid-feedback" role="alert">

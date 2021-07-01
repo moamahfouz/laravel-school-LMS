@@ -27,7 +27,7 @@ class HomeController extends Controller
      * Show the School dashboard.
      *
      * @return \Illuminate\Http\Response
-     */
+     */ 
     public function index() {
         $classes = SchoolClass::where('teacher_id', auth('teacher')->user()->id)->get();
         $tasks = Task::where('teacher_id', auth('teacher')->user()->id)->get();
